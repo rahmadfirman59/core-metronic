@@ -1,0 +1,493 @@
+:root {
+  --black-color: #211B3D;
+  --white-color: #FFFFFF;
+
+  --green-50    : #f2fbf8;
+  --green-100   : #e6f6f2;
+  --green-200   : #c0e9dd;
+  --green-300   : #9adbc9;
+  --green-400   : #4fc1a1;
+  --green-500   : #03A678;
+  --green-600   : #03956c;
+  --green-700   : #027d5a;
+  --green-800   : #026448;
+  --green-900   : #01513b;
+  --green-shadow: rgba(3, 149, 108, 0.5);
+
+  --blue-50    : #f5f9fe;
+  --blue-100   : #ecf3fd;
+  --blue-200   : #cfe1fb;
+  --blue-300   : #b2cef8;
+  --blue-400   : #79aaf2;
+  --blue-500   : #3F85ED;
+  --blue-600   : #3978d5;
+  --blue-700   : #2f64b2;
+  --blue-800   : #26508e;
+  --blue-900   : #1f4174;
+  --blue-shadow: rgba(63, 133, 237, 0.5);
+
+  --red-50    : #fef5f5;
+  --red-100   : #fdecea;
+  --red-200   : #facfcb;
+  --red-300   : #f7b1ac;
+  --red-400   : #f0776d;
+  --red-500   : #EA3D2F;
+  --red-600   : #d3372a;
+  --red-700   : #b02e23;
+  --red-800   : #8c251c;
+  --red-900   : #731e17;
+  --red-shadow: rgba(234, 61, 47, 0.5);
+
+  --alpha-50    : #f4f4f5;
+  --alpha-100   : #e9e8ec;
+  --alpha-200   : #c8c6cf;
+  --alpha-300   : #a6a4b1;
+  --alpha-400   : #645f77;
+  --alpha-500   : #211B3D;
+  --alpha-600   : #1e1837;
+  --alpha-700   : #19142e;
+  --alpha-800   : #141025;
+  --alpha-900   : #100d1e;
+  --alpha-shadow: rgba(33, 27, 61, 0.5);
+}
+
+body {
+  overflow-x : hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  box-shadow: 0px 6px 60px rgba(22, 28, 51, 0.06);
+  padding   : 24px 0 24px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color      : var(--black-color);
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+}
+
+.navbar .user-profile {
+  text-decoration: none;
+  color          : var(--black-color);
+}
+
+.navbar ul.dropdown-menu.show {
+  left: auto;
+}
+
+.sidebar-wrapper {
+  margin-top      : 98px;
+  background-color: #EFFFFD;
+  width           : 300px;
+  height          : 90vh;
+  overflow        : hidden;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  z-index         : 9;
+}
+
+.sidebar-wrapper .support,
+.sidebar-wrapper .title {
+  padding-left : 20px;
+  padding-right: 20px;
+}
+
+.sidebar-wrapper .support {
+  color        : var(--blue-500);
+  font-weight  : 600;
+  font-size    : 16px;
+  margin-bottom: 13px;
+}
+
+.sidebar-wrapper .title {
+  font-size    : 22px;
+  color        : var(--black-color);
+  font-weight  : 600;
+  line-height  : 30px;
+  margin-bottom: 40px;
+}
+
+.sidebar-wrapper ul {
+  width: 100%;
+}
+
+.sidebar-wrapper li {
+  font-size  : 16px;
+  font-weight: 500;
+  width      : 100%;
+}
+
+.sidebar-wrapper li.active {
+  background-color: #E3FEF9;
+}
+
+.sidebar-wrapper li a {
+  color         : var(--black-color);
+  padding-left  : 20px;
+  padding-right : 20px;
+  padding-top   : 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar-wrapper,
+.content-wrapper {
+  padding-top: 50px;
+}
+
+.filterbar-wrapper {
+  margin-top      : 98px;
+  background-color: #211B3D;
+  width           : 200px;
+  height          : 90vh;
+  overflow        : auto;
+  position        : fixed;
+  top             : 0;
+  right           : 0;
+  z-index         : 9;
+}
+
+.filterbar-wrapper ul {
+  width: 100%;
+}
+
+.filterbar-wrapper li {
+  font-size  : 13px;
+  font-weight: 400;
+  width      : 100%;
+}
+
+.filterbar-wrapper li a {
+  color  : var(--white-color);
+  padding: 5px 10px 5px 10px;
+}
+
+.filterbar-wrapper li a:hover,
+.filterbar-wrapper li a:focus {
+  color: var(--white-color);
+}
+
+.loading {
+  position        : fixed;
+  height          : 100vh;
+  width           : 100vw;
+  background-color: rgba(33, 27, 61, 0.5);
+  color           : white;
+  z-index         : 99;
+  display         : flex;
+}
+
+.loading p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-wrapper {
+  margin-left  : 350px;
+  margin-right : 30px;
+  margin-top   : 98px;
+  margin-bottom: 30px;
+}
+
+.content-wrapper .back-cta {
+  margin-bottom: 13px;
+}
+
+.content-wrapper .back-cta a {
+  text-decoration: none;
+  color          : var(--black-color);
+}
+
+.content-wrapper .back-cta p {
+  color      : var(--blue-500);
+  font-weight: 600;
+}
+
+.content-wrapper .content-title {
+  font-size  : 22px;
+  color      : var(--black-color);
+  font-weight: 600;
+}
+
+.input-group .row {
+  width: 100%;
+}
+
+.input-group input,
+.input-group select {
+  border       : 1px solid #D2D1DA;
+  border-radius: 50px;
+  padding      : 12px 20px 12px 20px;
+}
+
+.content-wrapper .input-group-title {
+  font-size  : 22px;
+  font-weight: 600;
+  color      : var(--black-color);
+}
+
+table {
+  border-collapse: unset;
+}
+
+table thead {
+  color: #D2D1DA;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-style: none;
+}
+
+/* .content-wrapper table {
+  margin-top: 30px;
+} */
+
+.modal-prompt-text {
+  font-size: 20px;
+}
+
+#viewModal #showPassword {
+  cursor: pointer;
+}
+
+.nicebtn-rounded {
+  padding      : 13px 31px 13px 31px;
+  border-radius: 100px;
+  border       : 0;
+  font-weight  : 500;
+  font-size    : 16px;
+}
+
+.nicebtn-small {
+  font-size: .875rem;
+  padding  : 0.25rem 1rem;
+}
+
+.nicebtn-green-primary {
+  background-color: var(--green-500);
+  color           : var(--white-color);
+}
+
+.nicebtn-green-primary:hover {
+  background-color: var(--green-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--green-700);
+}
+
+.nicebtn-green-primary:focus {
+  background-color: var(--green-500);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--green-700), 0 0 0 .2rem var(--green-shadow);
+}
+
+.nicebtn-green-primary:active,
+.nicebtn-green-primary:hover:focus,
+.nicebtn-green-primary:active:focus {
+  background-color: var(--green-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--green-700), 0 0 0 .2rem var(--green-shadow);
+}
+
+.nicebtn-green-secondary {
+  background-color: var(--white-color);
+  color           : var(--green-500);
+  box-shadow      : inset 0 0 0 .1rem var(--green-500);
+}
+
+.nicebtn-green-secondary:hover {
+  background-color: var(--green-200);
+  color           : var(--green-500);
+  box-shadow      : inset 0 0 0 .2rem var(--green-500);
+}
+
+.nicebtn-green-secondary:focus {
+  background-color: var(--green-100);
+  color           : var(--green-500);
+  box-shadow      : inset 0 0 0 .2rem var(--green-500), 0 0 0 .2rem var(--green-shadow);
+}
+
+.nicebtn-green-secondary:active,
+.nicebtn-green-secondary:hover:focus,
+.nicebtn-green-secondary:active:focus {
+  background-color: var(--green-300);
+  color           : var(--green-700);
+  box-shadow      : inset 0 0 0 .2rem var(--green-500), 0 0 0 .2rem var(--green-shadow);
+}
+
+.nicebtn-green-thirdty {
+  background-color: var(--green-50);
+  color           : var(--green-500);
+}
+
+.nicebtn-green-thirdty:hover {
+  background-color: var(--green-200);
+  color           : var(--green-500);
+}
+
+.nicebtn-green-thirdty:focus {
+  box-shadow      : 0 0 0 .2rem var(--green-shadow);
+  background-color: var(--green-100);
+  color           : var(--green-500);
+}
+
+.nicebtn-green-thirdty:active,
+.nicebtn-green-thirdty:hover:focus,
+.nicebtn-green-thirdty:active:focus {
+  box-shadow      : 0 0 0 .2rem var(--green-shadow);
+  background-color: var(--green-300);
+  color           : var(--green-700);
+}
+
+.nicebtn-blue-primary {
+  background-color: var(--blue-500);
+  color           : var(--white-color);
+}
+
+.nicebtn-blue-primary:hover {
+  background-color: var(--blue-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--blue-700);
+}
+
+.nicebtn-blue-primary:focus {
+  background-color: var(--blue-500);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--blue-700), 0 0 0 .2rem var(--blue-shadow);
+}
+
+.nicebtn-blue-primary:active,
+.nicebtn-blue-primary:hover:focus,
+.nicebtn-blue-primary:active:focus {
+  background-color: var(--blue-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--blue-700), 0 0 0 .2rem var(--blue-shadow);
+}
+
+.nicebtn-red-primary {
+  background-color: var(--red-500);
+  color           : var(--white-color);
+}
+
+.nicebtn-red-primary:hover {
+  background-color: var(--red-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--red-700);
+}
+
+.nicebtn-red-primary:focus {
+  background-color: var(--red-500);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--red-700), 0 0 0 .2rem var(--red-shadow);
+}
+
+.nicebtn-red-primary:active,
+.nicebtn-red-primary:hover:focus,
+.nicebtn-red-primary:active:focus {
+  background-color: var(--red-600);
+  color           : var(--white-color);
+  box-shadow      : inset 0 0 0 .2rem var(--red-700), 0 0 0 .2rem var(--red-shadow);
+}
+
+.nicebtn-red-thirdty {
+  background-color: var(--red-50);
+  color           : var(--red-500);
+}
+
+.nicebtn-red-thirdty:hover {
+  background-color: var(--red-200);
+  color           : var(--red-500);
+}
+
+.nicebtn-red-thirdty:focus {
+  box-shadow      : 0 0 0 .2rem var(--red-shadow);
+  background-color: var(--red-100);
+  color           : var(--red-500);
+}
+
+.nicebtn-red-thirdty:active,
+.nicebtn-red-thirdty:hover:focus,
+.nicebtn-red-thirdty:active:focus {
+  box-shadow      : 0 0 0 .2rem var(--red-shadow);
+  background-color: var(--red-300);
+  color           : var(--red-700);
+}
+
+.nicebtn-alpha-white {
+  background-color: var(--white-color);
+  color           : var(--alpha-500);
+  box-shadow      : inset 0 0 0 .1rem var(--alpha-500);
+}
+
+.nicebtn-alpha-white:hover {
+  background-color: var(--white-color);
+  color           : var(--alpha-500);
+  box-shadow      : inset 0 0 0 .2rem var(--alpha-500);
+}
+
+.nicebtn-alpha-white:focus {
+  background-color: var(--white-color);
+  color           : var(--alpha-500);
+  box-shadow      : inset 0 0 0 .2rem var(--alpha-500), 0 0 0 .2rem var(--alpha-shadow);
+}
+
+.nicebtn-alpha-white:active,
+.nicebtn-alpha-white:hover:focus,
+.nicebtn-alpha-white:active:focus {
+  background-color: var(--white-color);
+  color           : var(--alpha-700);
+  box-shadow      : inset 0 0 0 .2rem var(--alpha-500), 0 0 0 .2rem var(--alpha-shadow);
+}
+
+.nicecard {
+  border-radius: 0.5rem;
+}
+
+.nicecard .insight-header,
+.nicecard .insight-header h5 {
+  font-size  : 16px;
+  font-weight: 500;
+  color      : #6F6A86;
+}
+
+.nicecard .insight-total {
+  font-size  : 20px;
+  font-weight: 800;
+}
+
+.nicecard-green {
+  background-color: var(--green-50);
+}
+
+.nicecard-red {
+  background-color: var(--red-50);
+}
+
+.nicecard-blue {
+  background-color: var(--blue-50);
+}
+
+.text-green {
+  color: var(--green-500);
+}
+
+.text-red {
+  color: var(--red-500);
+}
+
+.text-blue {
+  color: var(--blue-500)
+}

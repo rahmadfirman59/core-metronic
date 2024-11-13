@@ -1,0 +1,236 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #211B3D;
+}
+
+.navbar {
+  box-shadow: 0px 6px 60px rgba(22, 28, 51, 0.06);
+  padding   : 24px 0 24px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+  color      : #211B3D;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+}
+
+.banner {
+  padding: 80px 0 80px 0;
+}
+
+.banner .copywriting {
+  padding-top: 80px;
+}
+
+.banner .header {
+  margin     : 20px 0 20px 0;
+  font-size  : 40px;
+  color      : #211B3D;
+  font-weight: 600;
+}
+
+.banner .support {
+  font-size  : 16px;
+  font-weight: 400;
+  color      : #5B5575;
+  line-height: 30px;
+}
+
+.banner .cta {
+  margin-top: 30px;
+}
+
+.story {
+  font-weight: 600;
+  font-size  : 16px;
+  color      : #3F85ED;
+}
+
+.primary-header {
+  font-weight: 600;
+  font-size  : 30px;
+  color      : #211B3D;
+}
+
+.btn-master,
+.btn-thirdty,
+.btn-primary,
+.btn-secondary {
+  padding      : 13px 31px 13px 31px;
+  border-radius: 100px;
+  border       : 0;
+  font-weight  : 500;
+  font-size    : 16px;
+}
+
+.btn-primary {
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #3F85ED;
+  color           : #FFFFFF;
+}
+
+.btn-primary:active {
+  background-color: #3F85ED;
+  color           : #FFFFFF;
+}
+
+.btn-primary:focus {
+  box-shadow      : 0 0 0 .2rem rgba(23, 166, 120, .5);
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-primary:hover:focus {
+  box-shadow      : 0 0 0 .2rem rgba(63, 133, 237, .5);
+  background-color: #3F85ED;
+  color           : #FFFFFF;
+}
+
+.btn-primary:active:focus {
+  box-shadow      : 0 0 0 .2rem rgba(63, 133, 237, .5);
+  background-color: #3F85ED;
+  color           : #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #EFFFFD;
+  color           : #03A678;
+}
+
+.btn-secondary:hover {
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-secondary:active {
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-secondary:focus {
+  box-shadow      : 0 0 0 .2rem rgba(227, 254, 249, 1);
+  background-color: #EFFFFD;
+  color           : #03A678;
+}
+
+.btn-secondary:hover:focus {
+  box-shadow      : 0 0 0 .2rem rgba(23, 166, 120, .5);
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-secondary:active:focus {
+  box-shadow      : 0 0 0 .2rem rgba(23, 166, 120, .5);
+  background-color: #03A678;
+  color           : #FFFFFF;
+}
+
+.btn-block {
+  display: block;
+}
+
+.services {
+  background-color: #F7F7FB;
+  padding         : 80px 0 80px 0;
+}
+
+.service-item {
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 40px;
+}
+
+.service-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3F85ED;
+}
+
+.service-img {
+  height: 128px;
+  padding-bottom: 20px;
+}
+
+.service-support {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6F6A86;
+  text-align: start;
+  line-height: 30px;
+}
+
+.geographic {
+  background-color: #03A678;
+  padding         : 80px 0 80px 0;
+}
+
+.story-white {
+  font-weight: 600;
+  font-size  : 16px;
+  color      : #FFFFFF;
+}
+
+.primary-header-white {
+  font-weight: 600;
+  font-size  : 30px;
+  color      : #FFFFFF;
+}
+
+.login {
+  padding-top   : 80px;
+  padding-bottom: 80px;
+}
+
+.basic-form input {
+  border       : 1px solid #D2D1DA;
+  border-radius: 50px;
+  padding      : 12px 20px 12px 20px;
+}
+
+.header-login {
+  color    : #03A678;
+  font-size: 28px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgb(23 166 120 / 25%);
+}
+
+.geographic .geographic-img {
+  width: 800px;
+}
+
+.brands {
+  margin-top: 60px;
+}
+
+.brands img {
+  width: 400px;
+}
+
+.copyright {
+  padding-top: 70px;
+  background-color: #F7F7FB;
+  color: #6F6A86;
+}
+
+.sidebar {
+  background-color: #03A678;
+  min-height: (100vh - 112px);
+}
